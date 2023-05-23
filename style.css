@@ -1,0 +1,130 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(210, 46%, 95%);
+}
+
+.main-container{
+	display: grid;
+	grid-template-areas: "daniel daniel jonathan kira"
+						"jeanette patrick patrick kira";
+	align-self: center;
+	gap: 1.25rem;
+	padding: 0;
+	margin: 0;
+}
+
+.testimonial-container{
+	display: flex;
+	padding: 2vh 2vw;
+	flex-direction: column;
+	border-radius: 1em;
+}
+
+.profile-container{
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.profile-pic{
+	border-radius: 50%;
+}
+
+.profile-name-1{
+	color: white;
+	font-weight: 600;
+}
+
+.profile-name-2{
+	color: hsl(217, 19%, 35%);
+	font-weight: 600;
+}
+
+.headline-1{
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+}
+
+.headline-2{
+	font-size: 20px;
+	font-weight: 600;
+	color: hsl(217, 19%, 35%);
+}
+
+.quote-1{
+	color: hsl(0, 0%, 81%);
+}
+
+.quote-2{
+	color: hsl(217, 19%, 35%);
+}
+
+.daniel{
+	background-color: hsl(263, 55%, 52%);
+	background-image: url("images/bg-pattern-quotation.svg");
+	background-repeat: no-repeat;
+	background-position: right 10rem top ;
+	grid-area: daniel;
+}
+
+.jonathan{
+	background-color: hsl(217, 19%, 35%);
+	grid-area: jonathan;
+}
+
+.jeanette{
+	background-color: white;
+	color: hsl(217, 19%, 35%);
+	grid-area:  jeanette;
+}
+
+.kira{
+	background-color: white;
+	color: hsl(217, 19%, 35%);
+	height: 100%;
+	grid-area: kira;
+}
+
+
+.patrick{
+	background-color: hsl(219, 29%, 14%);
+	grid-area: patrick;
+}
+
+.ft{
+	color: hsl(217, 19%, 35%);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.ft:hover{
+	color: hsl(219, 29%, 14%);
+}
+
+
+@media screen and (max-width: 375px){
+	
+	.main-container{
+		display: grid;
+		grid-template-areas: "daniel" "daniel" "jonathan" "jeanette" "patrick" "patrick" "kira" "kira";
+	}
+
+	.daniel{
+		background-position: right 1em top;
+	}
+
+	.testimonial-container{
+		padding: 1.5em;
+	}
+
+}
